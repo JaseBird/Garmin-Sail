@@ -1,0 +1,28 @@
+[ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\delegates\HomeViewDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\delegates\HomeViewDelegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\delegates\HomeViewDelegate.mc"; @line = 4; @symbol_classdef = [Garmin_SailDelegate,4,6,25]; @symbol_extends<0> = [WatchUi,4,34,41]; @symbol_extends<1> = [BehaviorDelegate,4,42,58]; ]
+class Garmin_SailDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\delegates\HomeViewDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\delegates\HomeViewDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\delegates\HomeViewDelegate.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; ]
+    function initialize() as Void {
+C__Users_SS7U9859_Documents_github_Garmin_Sail_source_delegates_HomeViewDelegate_mc_6_26_8_4_start:
+[ "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\delegates\HomeViewDelegate.mc" 7 8 ]
+        symbol [ BehaviorDelegate %tmp.2 7 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 7 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__Users_SS7U9859_Documents_github_Garmin_Sail_source_delegates_HomeViewDelegate_mc_6_26_8_4_stop:
+    }
+}
+[ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\delegates\HomeViewDelegate.mc"; @line = 1; ]
+<init> {
+}

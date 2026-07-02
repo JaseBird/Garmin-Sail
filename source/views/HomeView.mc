@@ -5,11 +5,13 @@ class Garmin_SailView extends WatchUi.View {
 
     function initialize() {
         View.initialize();
+
+        raceModel = new raceModel();
     }
 
     // Load your resources here
     function onLayout(dc as Dc) as Void {
-        setLayout(Rez.Layouts.MainLayout(dc));
+        setLayout(Rez.Layouts.HomeViewLayout(dc));
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -29,5 +31,4 @@ class Garmin_SailView extends WatchUi.View {
     // memory.
     function onHide() as Void {
     }
-
 }

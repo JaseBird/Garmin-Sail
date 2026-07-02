@@ -1,0 +1,34 @@
+[ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\controllers\AppController.mc"; @line = 1; @symbol_classdef = [AppController,1,6,19]; ]
+class AppController {
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\controllers\AppController.mc"; @line = 1; ]
+    <init> {
+    }
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\controllers\AppController.mc"; @line = 1; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\controllers\AppController.mc"; @line = 3; @position = 8; @symbol_vardef = [raceModel,3,8,17]; ]
+    var raceModel;
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\controllers\AppController.mc"; @line = 5; @symbol_functiondef = [initialize,5,13,23]; @symbol_param<0> = [model,5,24,29]; ]
+    function initialize(model) as Void {
+C__Users_SS7U9859_Documents_github_Garmin_Sail_source_controllers_AppController_mc_5_31_7_4_start:
+[ "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\controllers\AppController.mc" 6 8 ]
+        %tmp.1 = lgetv %model;
+        symbol [ model %tmp.1 6 20 25 ];
+        symbol [ raceModel ? 6 8 17 ];
+        putv self :raceModel %tmp.1;
+C__Users_SS7U9859_Documents_github_Garmin_Sail_source_controllers_AppController_mc_5_31_7_4_stop:
+    }
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\controllers\AppController.mc"; @line = 9; @symbol_functiondef = [nextRaceMode,9,13,25]; ]
+    function nextRaceMode() {
+    }
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\controllers\AppController.mc"; @line = 13; @symbol_functiondef = [previousRaceMode,13,13,29]; ]
+    function previousRaceMode() {
+    }
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\controllers\AppController.mc"; @line = 17; @symbol_functiondef = [startRace,17,13,22]; ]
+    function startRace() {
+    }
+}
+[ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\controllers\AppController.mc"; @line = 1; ]
+<init> {
+}

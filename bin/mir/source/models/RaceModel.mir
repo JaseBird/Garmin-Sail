@@ -1,0 +1,43 @@
+[ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\models\RaceModel.mc"; @line = 1; @symbol_classdef = [raceModel,1,6,15]; ]
+class raceModel {
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\models\RaceModel.mc"; @line = 1; ]
+    <init> {
+    }
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\models\RaceModel.mc"; @line = 1; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\models\RaceModel.mc"; @line = 3; @position = 8; @symbol_vardef = [raceMode,3,8,16]; ]
+    var raceMode;
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\models\RaceModel.mc"; @line = 5; @symbol_functiondef = [initialize,5,13,23]; ]
+    function initialize() as Void {
+C__Users_SS7U9859_Documents_github_Garmin_Sail_source_models_RaceModel_mc_5_26_7_4_start:
+[ "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\models\RaceModel.mc" 6 8 ]
+        %tmp.1 = "3 Minute";
+        symbol [ raceMode ? 6 8 16 ];
+        putv self :raceMode %tmp.1;
+C__Users_SS7U9859_Documents_github_Garmin_Sail_source_models_RaceModel_mc_5_26_7_4_stop:
+    }
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\models\RaceModel.mc"; @line = 9; @symbol_functiondef = [getRaceMode,9,13,24]; ]
+    function getRaceMode() {
+C__Users_SS7U9859_Documents_github_Garmin_Sail_source_models_RaceModel_mc_9_27_11_4_start:
+[ "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\models\RaceModel.mc" 10 8 ]
+        symbol [ raceMode %tmp.2 10 15 23 ];
+        %tmp.2 = getv ? :raceMode;
+        ret %tmp.2;
+C__Users_SS7U9859_Documents_github_Garmin_Sail_source_models_RaceModel_mc_9_27_11_4_stop:
+    }
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\models\RaceModel.mc"; @line = 13; @symbol_functiondef = [setRaceMode,13,13,24]; @symbol_param<0> = [mode,13,25,29]; ]
+    function setRaceMode(mode) {
+C__Users_SS7U9859_Documents_github_Garmin_Sail_source_models_RaceModel_mc_13_31_15_4_start:
+[ "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\models\RaceModel.mc" 14 8 ]
+        %tmp.1 = lgetv %mode;
+        symbol [ mode %tmp.1 14 19 23 ];
+        symbol [ raceMode ? 14 8 16 ];
+        putv self :raceMode %tmp.1;
+C__Users_SS7U9859_Documents_github_Garmin_Sail_source_models_RaceModel_mc_13_31_15_4_stop:
+    }
+}
+[ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\models\RaceModel.mc"; @line = 1; ]
+<init> {
+}
