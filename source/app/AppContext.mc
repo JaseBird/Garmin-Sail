@@ -1,6 +1,6 @@
 /* 
  * ============================================================================
- * Project  : Garmin Sail
+ * Project  : Tack
  * File     : AppContext.mc
  * Author   : Jason Bird
  * 

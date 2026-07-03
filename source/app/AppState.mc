@@ -1,6 +1,6 @@
 /* 
  * ============================================================================
- * Project  : Garmin Sail
+ * Project  : Tack
  * File     : AppState.mc
  * Author   : Jason Bird
  * 
