@@ -183,11 +183,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "812c13a7f9ad129f",
+  "active": "0c923b41ade74d78",
   "lastOpenFiles": [
-    "Roadmap.md",
-    "Changelog.md",
-    "Architecture.md",
+    "descisions",
+    "releases",
+    "architecture",
+    "descisions/Roadmap.md",
+    "releases/Changelog.md",
+    "architecture/Architecture.md",
     "README.md",
     "Notes.md"
   ]
