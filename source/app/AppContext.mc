@@ -24,8 +24,10 @@ using Toybox.Lang;
 using Tack.Controllers;
 using Tack.Models;
 
-namespace Tack.App
-{
+namespace Tack.App {
+    
+    // Owns all shared application state and services
+    
     class AppContext {
         
         // PRIVATE MEMBERS

@@ -1,7 +1,7 @@
 /* 
  * ============================================================================
  * Project  : Garmin Sail
- * File     : ApplicationState.mc
+ * File     : AppState.mc
  * Author   : Jason Bird
  * 
  * Description
@@ -23,7 +23,8 @@ namespace Tack.Models {
     // These values are intentionally immutable and should only be changed by
     // the AppController during state transitions.
 
-     class ApplicationState {
+     class AppState {
+        
         // APPLICATION STATES
         // --------------------------------------------------------------------
 
@@ -32,5 +33,20 @@ namespace Tack.Models {
 
         // Pre-Start countdown
         public const COUNTDOWN = 1;
+
+        // Active race
+        public const RACING = 2;
+
+        // Race complete summary
+        public const SUMMARY = 3;
+
+        // Settings screen
+        public const SETTINGS = 4;
+
+        // Sensor management screen
+        public const SENSOR_STATUS = 5;
+
+        // About / diagnostics screen
+        public const ABOUT = 6;
      }
 }
