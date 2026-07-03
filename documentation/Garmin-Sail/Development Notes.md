@@ -1,0 +1,1 @@
+For App context use either Singleton or Constructor Injection.
