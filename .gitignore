@@ -1,0 +1,6 @@
+bin/
+*.iq
+*.prg
+*.fit
+.DS_Store
+.vscode/settings.json
