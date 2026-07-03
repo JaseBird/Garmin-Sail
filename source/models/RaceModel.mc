@@ -1,4 +1,4 @@
-class raceModel {
+class RaceModel {
 
     var raceMode;
 

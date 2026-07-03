@@ -1,0 +1,99 @@
+[ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\app\App.mc"; @line = 21; @symbol_importdef<0> = [Toybox,21,7,13]; @symbol_importdef<1> = [Application,21,14,25]; ]
+import Toybox.Application;
+[ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\app\App.mc"; @line = 22; @symbol_importdef<0> = [Toybox,22,7,13]; @symbol_importdef<1> = [Lang,22,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\app\App.mc"; @line = 23; @symbol_importdef<0> = [Toybox,23,7,13]; @symbol_importdef<1> = [WatchUi,23,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\app\App.mc"; @line = 27; @symbol_classdef = [TackApp,27,6,13]; @symbol_extends<0> = [Application,27,22,33]; @symbol_extends<1> = [AppBase,27,34,41]; ]
+class TackApp extends Application.AppBase {
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\app\App.mc"; @line = 27; ]
+    <init> {
+    }
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\app\App.mc"; @line = 27; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\app\App.mc"; @line = 31; @position = 16; @symbol_vardef = [_appContext,31,16,27]; @symbol_type<0> = [AppContext,31,31,41]; ]
+    private
+    var _appContext as AppContext;
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\app\App.mc"; @line = 35; @symbol_functiondef = [initialize,35,20,30]; ]
+    public
+    function initialize() as Void {
+C__Users_SS7U9859_Documents_github_Garmin_Sail_source_app_App_mc_35_33_38_4_start:
+[ "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\app\App.mc" 36 8 ]
+        symbol [ AppBase %tmp.2 36 8 15 ];
+        %tmp.2 = getv ? :AppBase;
+        symbol [ initialize %tmp.3 36 16 26 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\app\App.mc" 37 8 ]
+        symbol [ AppContext %tmp.7 37 26 36 ];
+        %tmp.7 = getv ? :AppContext;
+        %tmp.4 = newc %tmp.7 ();
+        symbol [ _appContext ? 37 8 19 ];
+        putv self :_appContext %tmp.4;
+C__Users_SS7U9859_Documents_github_Garmin_Sail_source_app_App_mc_35_33_38_4_stop:
+    }
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\app\App.mc"; @line = 43; @symbol_functiondef = [onStart,43,20,27]; @symbol_param<0> = [state,43,28,33]; @symbol_param<0>_type<0> = [Dictionary,43,37,47]; ]
+    public
+    function onStart(state as Dictionary or Null) as Void {
+    }
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\app\App.mc"; @line = 47; @symbol_functiondef = [onStop,47,20,26]; @symbol_param<0> = [state,47,27,32]; @symbol_param<0>_type<0> = [Dictionary,47,36,46]; ]
+    public
+    function onStop(state as Dictionary or Null) as Void {
+    }
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\app\App.mc"; @line = 51; @symbol_functiondef = [getInitialView,51,20,34]; ]
+    public
+    function getInitialView() {
+C__Users_SS7U9859_Documents_github_Garmin_Sail_source_app_App_mc_51_37_55_4_start:
+[ "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\app\App.mc" 52 8 ]
+        [ "C__Users_SS7U9859_Documents_github_Garmin_Sail_source_app_App_mc_51_37_55_4_start" "C__Users_SS7U9859_Documents_github_Garmin_Sail_source_app_App_mc_51_37_55_4_stop" ]
+        %homeView.1 = local;
+        symbol [ homeView %homeView.1 52 12 20 ];
+        %tmp.4 = lgetv %homeView.1;
+        symbol [ homeView %tmp.4 52 27 35 ];
+        symbol [ _appContext %tmp.6 52 36 47 ];
+        %tmp.6 = getv ? :_appContext;
+        %tmp.1 = newc %tmp.4 (%tmp.6);
+        lputv %homeView.1 %tmp.1;
+        symbol [ homeView %homeView.1 52 12 20 ];
+[ "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\app\App.mc" 53 8 ]
+        [ "C__Users_SS7U9859_Documents_github_Garmin_Sail_source_app_App_mc_51_37_55_4_start" "C__Users_SS7U9859_Documents_github_Garmin_Sail_source_app_App_mc_51_37_55_4_stop" ]
+        %homeDelegate.2 = local;
+        symbol [ homeDelegate %homeDelegate.2 53 12 24 ];
+        %tmp.10 = lgetv %homeDelegate.2;
+        symbol [ homeDelegate %tmp.10 53 31 43 ];
+        symbol [ _appContext %tmp.12 53 44 55 ];
+        %tmp.12 = getv ? :_appContext;
+        %tmp.13 = lgetv %homeView.1;
+        symbol [ homeView %tmp.13 53 57 65 ];
+        %tmp.7 = newc %tmp.10 (%tmp.12, %tmp.13);
+        lputv %homeDelegate.2 %tmp.7;
+        symbol [ homeDelegate %homeDelegate.2 53 12 24 ];
+[ "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\app\App.mc" 54 8 ]
+        %tmp.14 = newa 2;
+        %tmp.15 = lgetv %homeView.1;
+        symbol [ homeView %tmp.15 54 16 24 ];
+        %tmp.16 = dup %tmp.14;
+        %tmp.17 = aputv %tmp.16 0 %tmp.15;
+        %tmp.18 = lgetv %homeDelegate.2;
+        symbol [ homeDelegate %tmp.18 54 26 38 ];
+        %tmp.19 = dup %tmp.17;
+        %tmp.20 = aputv %tmp.19 1 %tmp.18;
+        ret %tmp.20;
+C__Users_SS7U9859_Documents_github_Garmin_Sail_source_app_App_mc_51_37_55_4_stop:
+    }
+    [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\app\App.mc"; @line = 60; @symbol_functiondef = [getContext,60,20,30]; @symbol_return<0> = [AppContext,60,36,46]; ]
+    public
+    function getContext() as AppContext {
+C__Users_SS7U9859_Documents_github_Garmin_Sail_source_app_App_mc_60_47_62_4_start:
+[ "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\app\App.mc" 61 8 ]
+        symbol [ _appContext %tmp.2 61 15 26 ];
+        %tmp.2 = getv ? :_appContext;
+        ret %tmp.2;
+C__Users_SS7U9859_Documents_github_Garmin_Sail_source_app_App_mc_60_47_62_4_stop:
+    }
+}
+[ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\app\App.mc"; @line = 21; ]
+<init> {
+}

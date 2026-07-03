@@ -20,39 +20,33 @@
  */
 
 using Toybox.Lang;
-
-using Tack.Controllers;
-using Tack.Models;
-
-namespace Tack.App {
     
-    // Owns all shared application state and services
+// Owns all shared application state and services
+
+class AppContext {
     
-    class AppContext {
-        
-        // PRIVATE MEMBERS
-        // --------------------------------------------------------------------
-        private var _raceModel as RaceModel;
-        private var _appController as _appController;
+    // PRIVATE MEMBERS
+    // --------------------------------------------------------------------
+    private var _raceModel as RaceModel;
+    private var _appController as AppController;
 
-        // CONSTRUCTOR
-        // --------------------------------------------------------------------
-        // Construct the application's dependency graph
-        public function initialize() {
-            _raceModel = new RaceModel();
-            _appController = new AppController(_raceModel);
-        }
+    // CONSTRUCTOR
+    // --------------------------------------------------------------------
+    // Construct the application's dependency graph
+    public function initialize() {
+        _raceModel = new RaceModel();
+        _appController = new AppController(_raceModel);
+    }
 
-        // PUBLIC PROPERTIES
-        // --------------------------------------------------------------------
-        // Returns the shared RaceModel instance
-        public function getRaceModel() as RaceModel {
-            return _raceModel;
-        }
+    // PUBLIC PROPERTIES
+    // --------------------------------------------------------------------
+    // Returns the shared RaceModel instance
+    public function getRaceModel() as RaceModel {
+        return _raceModel;
+    }
 
-        // Returns the shared AppController instance
-        public function getAppController() as AppController {
-            return _appController;
-        }
+    // Returns the shared AppController instance
+    public function getAppController() as AppController {
+        return _appController;
     }
 }

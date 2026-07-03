@@ -1,5 +1,5 @@
-[ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\models\RaceModel.mc"; @line = 1; @symbol_classdef = [raceModel,1,6,15]; ]
-class raceModel {
+[ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\models\RaceModel.mc"; @line = 1; @symbol_classdef = [RaceModel,1,6,15]; ]
+class RaceModel {
     [ @file = "C:\Users\SS7U9859\Documents\github\Garmin-Sail\source\models\RaceModel.mc"; @line = 1; ]
     <init> {
     }
